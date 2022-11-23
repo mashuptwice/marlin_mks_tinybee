@@ -1223,7 +1223,7 @@
 
   // Add Probe Z Offset calibration to the Z Probe Offsets menu
   #if HAS_BED_PROBE
-    //#define PROBE_OFFSET_WIZARD
+    #define PROBE_OFFSET_WIZARD
     #if ENABLED(PROBE_OFFSET_WIZARD)
       //
       // Enable to init the Probe Z-Offset when starting the Wizard.
@@ -1233,7 +1233,7 @@
       //#define PROBE_OFFSET_WIZARD_START_Z -4.0
 
       // Set a convenient position to do the calibration (probing point and nozzle/bed-distance)
-      //#define PROBE_OFFSET_WIZARD_XY_POS { X_CENTER, Y_CENTER }
+      #define PROBE_OFFSET_WIZARD_XY_POS { X_CENTER, Y_CENTER }
     #endif
   #endif
 
@@ -1247,7 +1247,7 @@
   //#define TURBO_BACK_MENU_ITEM
 
   // Add a mute option to the LCD menu
-  //#define SOUND_MENU_ITEM
+  #define SOUND_MENU_ITEM
 
   /**
    * LED Control Menu
@@ -1263,7 +1263,7 @@
       #define LED_USER_PRESET_BLUE         0  // User defined BLUE value
       #define LED_USER_PRESET_WHITE      255  // User defined WHITE value
       #define LED_USER_PRESET_BRIGHTNESS 255  // User defined intensity
-      //#define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
+      #define LED_USER_PRESET_STARTUP       // Have the printer display the user preset color on startup
     #endif
     #if ENABLED(NEO2_COLOR_PRESETS)
       #define NEO2_USER_PRESET_RED        255  // User defined RED value
