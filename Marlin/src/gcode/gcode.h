@@ -1092,10 +1092,10 @@ private:
     static void M871();
   #endif
 
-  #if ENABLED(LIN_ADVANCE)
+  
     static void M900();
     static void M900_report(const bool forReplay=true);
-  #endif
+  
 
   #if HAS_TRINAMIC_CONFIG
     static void M122();

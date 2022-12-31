@@ -952,7 +952,7 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
       #endif
 
       
-      case 900: M900(); break;                                  // M900: Set advance K factor.
+        case 900: M900(); break;                                  // M900: Set advance K factor.
       
 
       #if ANY(HAS_MOTOR_CURRENT_SPI, HAS_MOTOR_CURRENT_PWM, HAS_MOTOR_CURRENT_I2C, HAS_MOTOR_CURRENT_DAC)
