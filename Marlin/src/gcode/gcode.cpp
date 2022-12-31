@@ -951,9 +951,9 @@ void GcodeSuite::process_parsed_command(const bool no_ok/*=false*/) {
         case 871: M871(); break;                                  // M871: Print/reset/clear first layer temperature offset values
       #endif
 
-      
+      #if ENABLED(LIN_ADVANCE)
         case 900: M900(); break;                                  // M900: Set advance K factor.
-      
+      #endif
 
       #if ANY(HAS_MOTOR_CURRENT_SPI, HAS_MOTOR_CURRENT_PWM, HAS_MOTOR_CURRENT_I2C, HAS_MOTOR_CURRENT_DAC)
         case 907: M907(); break;                                  // M907: Set digital trimpot motor current using axis codes.
